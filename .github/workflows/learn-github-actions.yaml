@@ -5,4 +5,5 @@ jobs:
   hello-world:
     runs-on: ubuntu-latest
     steps:
-      run: echo "hello world"
+      - name: Print the input tag to STDOUT
+        run: echo  The tags are ${{ inputs.tags }}
