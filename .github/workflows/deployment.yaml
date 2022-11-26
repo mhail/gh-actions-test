@@ -7,4 +7,4 @@ jobs:
     environment: dev
     steps:
       - name: deploy
-          run: echo  The tags are ${{ inputs.tags }}
+        run: echo  The tags are ${{ inputs.tags }}
