@@ -1,0 +1,10 @@
+name: Deployment
+on: [workflow_dispatch]
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    environment: dev
+    steps:
+      - name: deploy
+          run: echo  The tags are ${{ inputs.tags }}
